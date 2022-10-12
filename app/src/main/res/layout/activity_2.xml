@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_6641316"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/Act1readingNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reading_now"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#45FFFFFF"
+        android:padding="20dp"
+
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/dune"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_below="@id/Act1readingNow"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@id/menu">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="@string/lorem"/>
+    </ScrollView>
+    <!--bottom menu buttons -->
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Reading_Now"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#30ffffff"
+            android:drawableTop="@drawable/ic_baseline_chrome_reader_mode_24"
+            android:maxWidth="100dp"
+            android:text="@string/reading_now"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/Libarary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#30ffffff"
+            android:drawableTop="@drawable/ic_baseline_library_books_24"
+            android:maxWidth="100dp"
+            android:text="@string/libarary"
+            android:textSize="12sp"
+            tools:ignore="SmallSp" />
+        <Button
+            android:id="@+id/Book_Store"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#30ffffff"
+            android:drawableTop="@drawable/ic_baseline_local_grocery_store_24"
+            android:maxWidth="100dp"
+            android:text="@string/shop"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/Audio_Books"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#30ffffff"
+            android:drawableTop="@drawable/ic_baseline_headphones_24"
+            android:maxWidth="100dp"
+            android:text="@string/audio_books"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

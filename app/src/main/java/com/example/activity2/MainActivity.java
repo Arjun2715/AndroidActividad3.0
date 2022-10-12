@@ -1,42 +1,48 @@
 package com.example.activity2;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.button.MaterialButton;
-
 public class MainActivity extends AppCompatActivity {
+    private MaterialButton Login;
+    private EditText password;
+    private EditText username;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView username = (TextView) findViewById(R.id.username);
-        TextView password = (TextView) findViewById(R.id.password);
-        MaterialButton Login_btn = (MaterialButton) findViewById(R.id.Login_btn);
+        username = (EditText) findViewById(R.id.username);
+        password = (EditText) findViewById(R.id.password);
+        Login =   findViewById(R.id.Login_btn);
 
-        Login_btn.setOnClickListener(new View.OnClickListener() {
+
+
+        Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-                    //correct
-                    //Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                } else {
-                    //incorrect
-                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
-                }
+                login();
             }
         });
-
+    }
+    private  void login(){
+        if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+            //correct
+            Intent intent = new Intent(this,Activity2.class);
+            startActivity(intent);//it starts new activity
+        } else {
+            loginFailed();//this calls faild login message method
+        }
     }
 
+    private void loginFailed(){ //login fails this error message shows next to the password field.
+        password.setError("Password or Username didn't match");
+    }
 
 }
