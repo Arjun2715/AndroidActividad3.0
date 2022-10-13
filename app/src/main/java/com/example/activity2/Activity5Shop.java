@@ -7,16 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Activity3Library extends AppCompatActivity {
+public class Activity5Shop extends AppCompatActivity {
     private Button reading;
     private Button library;
     private Button audio_Books;
     private Button shop;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity3_libarary);
+        setContentView(R.layout.activity_main_activity5_shop);
         library = (Button) findViewById(R.id.Libarary);
         reading = (Button) findViewById(R.id.Reading_Now);
         audio_Books = (Button) findViewById(R.id.Audio_Books);
@@ -57,11 +56,11 @@ public class Activity3Library extends AppCompatActivity {
         startActivity(intent);
     }
     private void openShop(){
-        Intent intent = new Intent(this,Activity4AudioBooks.class);
+        Intent intent = new Intent(this, Activity5Shop.class);
         startActivity(intent);
     }
     private void openAudioBooks(){
-        Intent intent = new Intent(this, Activity5Shop.class);
+        Intent intent = new Intent(this,Activity4AudioBooks.class);
         startActivity(intent);
     }
 }

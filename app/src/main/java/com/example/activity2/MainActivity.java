@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private  void login(){
         if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
             //correct
-            Intent intent = new Intent(this,Activity2.class);
+            Intent intent = new Intent(this,Activity3Library.class);
             startActivity(intent);//it starts new activity
         } else {
             loginFailed();//this calls faild login message method

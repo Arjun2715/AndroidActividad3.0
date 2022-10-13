@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class Activity2 extends AppCompatActivity {
     private Button reading;
@@ -25,13 +24,13 @@ public class Activity2 extends AppCompatActivity {
         library.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openReading();
+                openLibrary();
             }
         });
         reading.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openLibrary();
+                openReading();
             }
         });
         shop.setOnClickListener(new View.OnClickListener() {
@@ -53,15 +52,15 @@ public class Activity2 extends AppCompatActivity {
         startActivity(intent);
     }
     private void openReading(){
-        Intent intent = new Intent(this,Activity3Library.class);
+        Intent intent = new Intent(this,Activity2.class);
         startActivity(intent);
     }
     private void openShop(){
-        Intent intent = new Intent(this,Activity3Library.class);
+        Intent intent = new Intent(this, Activity5Shop.class);
         startActivity(intent);
     }
     private void openAudioBooks(){
-        Intent intent = new Intent(this,Activity3Library.class);
+        Intent intent = new Intent(this,Activity4AudioBooks.class);
         startActivity(intent);
     }
 
