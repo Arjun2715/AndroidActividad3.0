@@ -10,7 +10,7 @@
         android:id="@+id/Act1readingNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/reading_now"
+        android:text="@string/audio_books"
         android:textColor="@color/white"
         android:textStyle="bold"
 
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <!--non_fiction_books books scroll -->
+
             <TextView
                 android:layout_width="410dp"
                 android:layout_height="40dp"
@@ -39,24 +39,37 @@
                 android:textStyle="bold"/>
             <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 tools:ignore="SpeakableTextPresentCheck">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/img1"
+                    <!--<LinearLayout
                         android:layout_width="161dp"
-                        android:layout_height="210dp"
-                        android:layout_margin="5dp"
-                        android:clickable="true"
-                        android:src="@drawable/a15"
-                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                        android:layout_height="180dp"
+                        android:minHeight="160dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:clickable="true"
+                            android:src="@drawable/a15"/>
+                            <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="48 Laws of Power"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            />
 
-                    <ImageView
+                    </LinearLayout>-->
+
+                    <!--<ImageView
                         android:id="@+id/img2"
                         android:layout_width="165dp"
                         android:layout_height="210dp"
@@ -70,12 +83,11 @@
                         android:layout_margin="5dp"
                         android:src="@drawable/a3" />
 
-
+-->
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!--fiction_books books scroll -->
-            <TextView
+           <!-- <TextView
                 android:layout_width="410dp"
                 android:layout_height="40dp"
                 android:padding="5dp"
@@ -117,7 +129,6 @@
             </HorizontalScrollView>
 
 
-            <!--lifestyle books scroll -->
             <TextView
                 android:layout_width="410dp"
                 android:layout_height="40dp"
@@ -161,7 +172,6 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!--Mystery books scroll -->
             <TextView
                 android:layout_width="410dp"
                 android:layout_height="40dp"
@@ -199,7 +209,6 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!--Mystery books scroll -->
             <TextView
                 android:layout_width="410dp"
                 android:layout_height="40dp"
@@ -235,7 +244,7 @@
                         android:layout_margin="5dp"
                         android:src="@drawable/a22" />
                 </LinearLayout>
-            </HorizontalScrollView>
+            </HorizontalScrollView>-->
         </LinearLayout>
     </ScrollView>
     <!--bottom menu buttons -->
@@ -248,7 +257,7 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/Reading_Now"
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:background="#30ffffff"
@@ -258,7 +267,7 @@
             android:textSize="12sp" />
         <Button
             android:id="@+id/Libarary"
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:background="#30ffffff"
@@ -269,7 +278,7 @@
             tools:ignore="SmallSp" />
         <Button
             android:id="@+id/Book_Store"
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:background="#30ffffff"
@@ -279,7 +288,7 @@
             android:textSize="12sp" />
         <Button
             android:id="@+id/Audio_Books"
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:background="#30ffffff"
