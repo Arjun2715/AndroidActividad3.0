@@ -15,7 +15,7 @@
         <activity
             android:name=".Activity5Shop"
             android:exported="false"
-            android:noHistory="true">
+            android:parentActivityName=".Activity3Library">
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -24,7 +24,8 @@
         <activity
             android:name=".Activity4AudioBooks"
             android:exported="false"
-            android:noHistory="true">
+            android:noHistory="true"
+            android:parentActivityName=".Activity3Library">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -38,9 +39,10 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Activity2"
+            android:name=".Activity2Reading"
             android:exported="false"
-            android:noHistory="true">
+            android:noHistory="true"
+            android:parentActivityName=".Activity3Library">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

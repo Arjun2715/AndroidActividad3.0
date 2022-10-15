@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Activity2 extends AppCompatActivity {
+public class Activity2Reading extends AppCompatActivity {
     private Button reading;
     private Button library;
     private Button audio_Books;
@@ -52,7 +52,7 @@ public class Activity2 extends AppCompatActivity {
         startActivity(intent);
     }
     private void openReading(){
-        Intent intent = new Intent(this,Activity2.class);
+        Intent intent = new Intent(this, Activity2Reading.class);
         startActivity(intent);
     }
     private void openShop(){

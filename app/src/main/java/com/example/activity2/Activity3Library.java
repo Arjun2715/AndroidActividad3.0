@@ -53,15 +53,15 @@ public class Activity3Library extends AppCompatActivity {
         startActivity(intent);
     }
     private void openReading(){
-        Intent intent = new Intent(this,Activity2.class);
+        Intent intent = new Intent(this, Activity2Reading.class);
         startActivity(intent);
     }
     private void openShop(){
-        Intent intent = new Intent(this,Activity4AudioBooks.class);
+        Intent intent = new Intent(this,Activity5Shop.class);
         startActivity(intent);
     }
     private void openAudioBooks(){
-        Intent intent = new Intent(this, Activity5Shop.class);
+        Intent intent = new Intent(this, Activity4AudioBooks.class);
         startActivity(intent);
     }
 }
