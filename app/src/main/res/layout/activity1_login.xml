@@ -94,7 +94,7 @@
         android:id="@+id/social"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/forgotpass"
         android:layout_marginBottom="114dp"
         android:gravity="center">
 

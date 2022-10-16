@@ -7,5 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="whiteBlur">#40FFFFFFFF</color>
     <color name="buton">#f2c75b</color>
 </resources>

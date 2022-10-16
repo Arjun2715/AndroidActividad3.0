@@ -28,21 +28,26 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:layout_below="@id/Act1readingNow"/>
+
+    <!--bottom menu buttons -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/menu"
         android:layout_below="@+id/title"
-        android:layout_above="@id/menu">
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:padding="10dp"
-            android:text="@string/lorem"/>
+            android:text="@string/lorem"
+            android:background="#80FFFFFF"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
     </ScrollView>
-    <!--bottom menu buttons -->
+
     <LinearLayout
         android:id="@+id/menu"
         android:layout_width="match_parent"
