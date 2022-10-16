@@ -16,7 +16,7 @@ public class Activity3Library extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity3_libarary);
+        setContentView(R.layout.activity3_libarary);
         library = (Button) findViewById(R.id.Libarary);
         reading = (Button) findViewById(R.id.Reading_Now);
         audio_Books = (Button) findViewById(R.id.Audio_Books);

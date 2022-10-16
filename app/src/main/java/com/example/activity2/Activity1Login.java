@@ -5,10 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
 import com.google.android.material.button.MaterialButton;
-public class MainActivity extends AppCompatActivity {
+public class Activity1Login extends AppCompatActivity {
     private MaterialButton Login;
     private EditText password;
     private EditText username;
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity1_login);
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);

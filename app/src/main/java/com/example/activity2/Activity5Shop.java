@@ -21,7 +21,7 @@ public class Activity5Shop extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_activity5_shop);
+        setContentView(R.layout.activity5_shop);
         library = (Button) findViewById(R.id.Libarary);
         reading = (Button) findViewById(R.id.Reading_Now);
         audio_Books = (Button) findViewById(R.id.Audio_Books);
