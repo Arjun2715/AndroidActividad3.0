@@ -19,6 +19,14 @@ public class Activity5Shop extends AppCompatActivity {
     private  Button dune;
     private  Button stolen;
     @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        startActivity(new Intent(Activity5Shop.this, Activity3Library.class));
+        finish();
+
+    }
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity5_shop);
@@ -90,18 +98,22 @@ public class Activity5Shop extends AppCompatActivity {
     }
     private void openLibrary(){
         Intent intent = new Intent(this,Activity3Library.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
     private void openReading(){
         Intent intent = new Intent(this, Activity2Reading.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
     private void openShop(){
         Intent intent = new Intent(this, Activity5Shop.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
     private void openAudioBooks(){
         Intent intent = new Intent(this,Activity4AudioBooks.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
     private void openLawpowerBookLink(){

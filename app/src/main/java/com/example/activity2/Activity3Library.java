@@ -1,27 +1,58 @@
 package com.example.activity2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity3Library extends AppCompatActivity {
     private Button reading;
     private Button library;
     private Button audio_Books;
     private Button shop;
-
+    private ImageView laws48;
+    private ImageView goodStrat;
+    private ImageView thinking;
+    private ImageView dune;
+    private ImageView martian;
+    private ImageView aSpaceOdessey;
+    private ImageView manifest;
+    private ImageView confortBook;
+    private ImageView goodVibes;
+    private ImageView theLastThing;
+    private ImageView theThursdayMurder;
+    private ImageView killingFloor;
+    private ImageView deamon;
+    private ImageView intoNeon;
+    private ImageView akira;
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage("Are you sure you want to log out?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Activity3Library.super.onBackPressed();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity3_libarary);
+//Button listeners
         library = (Button) findViewById(R.id.Libarary);
         reading = (Button) findViewById(R.id.Reading_Now);
         audio_Books = (Button) findViewById(R.id.Audio_Books);
         shop = (Button) findViewById(R.id.Book_Store);
-
+//set on click listeners for the buttons
         library.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,22 +77,133 @@ public class Activity3Library extends AppCompatActivity {
                 openAudioBooks();
             }
         });
-
+//clicable images find by id's
+        laws48 = (ImageView) findViewById(R.id.img1);
+        goodStrat = (ImageView) findViewById(R.id.img2);
+        thinking = (ImageView) findViewById(R.id.img3);
+        dune = (ImageView) findViewById(R.id.img4);
+        martian = (ImageView) findViewById(R.id.img5);
+        aSpaceOdessey = (ImageView) findViewById(R.id.img6);
+        manifest = (ImageView) findViewById(R.id.img7);
+        confortBook = (ImageView) findViewById(R.id.img8);
+        goodVibes = (ImageView) findViewById(R.id.img9);
+        theLastThing = (ImageView) findViewById(R.id.img10);
+        theThursdayMurder = (ImageView) findViewById(R.id.img11);
+        killingFloor = (ImageView) findViewById(R.id.img12);
+        deamon = (ImageView) findViewById(R.id.img13);
+        intoNeon = (ImageView) findViewById(R.id.img14);
+        akira = (ImageView) findViewById(R.id.img15);
+        //set on click listeners for the images
+        laws48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        goodStrat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        thinking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        dune.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        martian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        aSpaceOdessey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        manifest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        confortBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        goodVibes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        theLastThing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        theThursdayMurder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        killingFloor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        deamon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        intoNeon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
+        akira.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReading();
+            }
+        });
     }
-    private void openLibrary(){
-        Intent intent = new Intent(this,Activity3Library.class);
+//methods for Intents
+    private void openLibrary() {
+        Intent intent = new Intent(this, Activity3Library.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
-    private void openReading(){
+    private void openReading() {
         Intent intent = new Intent(this, Activity2Reading.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
-    private void openShop(){
-        Intent intent = new Intent(this,Activity5Shop.class);
+    private void openShop() {
+        Intent intent = new Intent(this, Activity5Shop.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
-    private void openAudioBooks(){
+    private void openAudioBooks() {
         Intent intent = new Intent(this, Activity4AudioBooks.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
 }

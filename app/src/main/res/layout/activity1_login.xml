@@ -99,24 +99,36 @@
         android:gravity="center">
 
         <ImageView
+            android:id="@+id/google"
             android:layout_width="52dp"
             android:layout_height="52dp"
             android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
             android:scaleX="1.2"
             android:scaleY="1.2"
-            android:src="@drawable/google" />
+            android:src="@drawable/google"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
+            android:id="@+id/facebook"
             android:layout_width="46dp"
             android:layout_height="46dp"
             android:layout_margin="20dp"
-            android:src="@drawable/fb" />
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/fb"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <ImageView
+            android:id="@+id/twitter"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="20dp"
-            android:src="@drawable/twitter" />
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/twitter"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 

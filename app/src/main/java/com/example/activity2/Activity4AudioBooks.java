@@ -12,7 +12,14 @@ public class Activity4AudioBooks extends AppCompatActivity {
     private Button library;
     private Button audio_Books;
     private Button shop;
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        startActivity(new Intent(Activity4AudioBooks.this, Activity3Library.class));
+        finish();
 
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,18 +57,22 @@ public class Activity4AudioBooks extends AppCompatActivity {
     }
     private void openLibrary(){
         Intent intent = new Intent(this,Activity3Library.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
     private void openReading(){
         Intent intent = new Intent(this,Activity2Reading.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
     private void openShop(){
         Intent intent = new Intent(this,Activity5Shop.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
     private void openAudioBooks(){
         Intent intent = new Intent(this,Activity4AudioBooks.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
 }

@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:gravity="center"
-        android:text="@string/dune"
+        android:text="@string/title"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:layout_below="@id/Act1readingNow"/>
