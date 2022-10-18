@@ -37,4 +37,20 @@ Donec lobortis sapien scelerisque tortor vehicula tincidunt. Mauris at tellus et
     <string name="dune">Dune</string>
     <string name="library">Library</string>
     <string name="title">Title</string>
+    <string name="stolen_txt">This is my story. A letter from nowhere. Sixteen-year-old Gemma is kidnapped from Bangkok airport and taken to the Australian Outback. This wild and desolate</string>
+    <string name="stolen">STOLEN</string>
+    <string name="stolenPrice">$13.50</string>
+    <string name="book_store">Book Store</string>
+    <string name="discounts">Discounts</string>
+    <string name="_laws_of_power">48 Laws of power</string>
+    <string name="the_48_laws_of_power_txt">The 48 Laws of Power, The Art of Seduction, The 33 Strategies of War, and The 50th Law.</string>
+    <string name="laws_txt">$14.30</string>
+    <string name="good_strategy">Good Strategy\n Bad Strategy</string>
+    <string name="strategy_txt">Strategy is about creating a favourable outcome in the future by applying focus, allocate resources and most import the actions.</string>
+    <string name="strattxt">$13.50</string>
+    <string name="thinking_strategically">Thinking Strategically</string>
+    <string name="thinking_strategically_txt">Thinking Strategically is a rational approach to decision making that can reduce the stress and anxiety of uncertainty and will give you better control in life.</string>
+    <string name="thinking_strategically_price">$13.50</string>
+    <string name="dune_txt">Dune is a 1965 epic science fiction novel by American author Frank Herbert, originally published as two separate serials in Analog magazine.</string>
+    <string name="dune_Price">$13.50</string>
 </resources>

@@ -338,7 +338,7 @@
 
 
                         <Button
-                            android:id="@+id/DaemonAudiobtn"
+                            android:id="@+id/daemonAudiobtn"
                             android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"

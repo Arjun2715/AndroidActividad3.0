@@ -34,17 +34,18 @@ public class Activity1Login extends AppCompatActivity {
                 .setNegativeButton("No", null)
                 .show();
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity1_login);
 
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        Login = (MaterialButton) findViewById(R.id.Login_btn);
-        Google = (ImageView) findViewById(R.id.google);
-        Facebook = (ImageView) findViewById(R.id.facebook);
-        Twitter = (ImageView) findViewById(R.id.twitter);
+        username = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        Login = findViewById(R.id.Login_btn);
+        Google = findViewById(R.id.google);
+        Facebook = findViewById(R.id.facebook);
+        Twitter = findViewById(R.id.twitter);
 
 
         Google.setOnClickListener(new View.OnClickListener() {

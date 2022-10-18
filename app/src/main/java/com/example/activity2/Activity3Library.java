@@ -30,6 +30,7 @@ public class Activity3Library extends AppCompatActivity {
     private ImageView deamon;
     private ImageView intoNeon;
     private ImageView akira;
+
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
@@ -43,15 +44,16 @@ public class Activity3Library extends AppCompatActivity {
                 .setNegativeButton("No", null)
                 .show();
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity3_libarary);
 //Button listeners
-        library = (Button) findViewById(R.id.Libarary);
-        reading = (Button) findViewById(R.id.Reading_Now);
-        audio_Books = (Button) findViewById(R.id.Audio_Books);
-        shop = (Button) findViewById(R.id.Book_Store);
+        library = findViewById(R.id.Libarary);
+        reading = findViewById(R.id.Reading_Now);
+        audio_Books = findViewById(R.id.Audio_Books);
+        shop = findViewById(R.id.Book_Store);
 //set on click listeners for the buttons
         library.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,21 +80,21 @@ public class Activity3Library extends AppCompatActivity {
             }
         });
 //clicable images find by id's
-        laws48 = (ImageView) findViewById(R.id.img1);
-        goodStrat = (ImageView) findViewById(R.id.img2);
-        thinking = (ImageView) findViewById(R.id.img3);
-        dune = (ImageView) findViewById(R.id.img4);
-        martian = (ImageView) findViewById(R.id.img5);
-        aSpaceOdessey = (ImageView) findViewById(R.id.img6);
-        manifest = (ImageView) findViewById(R.id.img7);
-        confortBook = (ImageView) findViewById(R.id.img8);
-        goodVibes = (ImageView) findViewById(R.id.img9);
-        theLastThing = (ImageView) findViewById(R.id.img10);
-        theThursdayMurder = (ImageView) findViewById(R.id.img11);
-        killingFloor = (ImageView) findViewById(R.id.img12);
-        deamon = (ImageView) findViewById(R.id.img13);
-        intoNeon = (ImageView) findViewById(R.id.img14);
-        akira = (ImageView) findViewById(R.id.img15);
+        laws48 = findViewById(R.id.img1);
+        goodStrat = findViewById(R.id.img2);
+        thinking = findViewById(R.id.img3);
+        dune = findViewById(R.id.img4);
+        martian = findViewById(R.id.img5);
+        aSpaceOdessey = findViewById(R.id.img6);
+        manifest = findViewById(R.id.img7);
+        confortBook = findViewById(R.id.img8);
+        goodVibes = findViewById(R.id.img9);
+        theLastThing = findViewById(R.id.img10);
+        theThursdayMurder = findViewById(R.id.img11);
+        killingFloor = findViewById(R.id.img12);
+        deamon = findViewById(R.id.img13);
+        intoNeon = findViewById(R.id.img14);
+        akira = findViewById(R.id.img15);
         //set on click listeners for the images
         laws48.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -185,22 +187,26 @@ public class Activity3Library extends AppCompatActivity {
             }
         });
     }
-//methods for Intents
+
+    //methods for Intents
     private void openLibrary() {
         Intent intent = new Intent(this, Activity3Library.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
+
     private void openReading() {
         Intent intent = new Intent(this, Activity2Reading.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
+
     private void openShop() {
         Intent intent = new Intent(this, Activity5Shop.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
+
     private void openAudioBooks() {
         Intent intent = new Intent(this, Activity4AudioBooks.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
